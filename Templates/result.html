@@ -1,0 +1,20 @@
+<!DOCT  YPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H1>This is result</H1>
+<a href="{% url 'home' %}">CLICK HERE</a>
+<H1>Total word in artical :{{count_word}}</H1>
+<br></br>
+<H1>Article :--</H1>
+{{article}}
+<h2>Word occourence</h2>
+{% for word,num in var_dict%}
+{{word}}=
+{{num}} <br>
+{% endfor %}
+</body>
+</html>
